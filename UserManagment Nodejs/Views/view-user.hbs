@@ -1,0 +1,18 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">View user</li>
+    </ol>
+</nav>
+
+{{#each rows }}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ this.first_name }} {{ this.last_name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ this.status }}</h6>
+    <p class="card-text">{{ this.comments }}</p>
+    <a href="#" class="card-link">{{ this.email }}</a>
+    <a href="#" class="card-link">{{ this.phone }}</a>
+  </div>
+</div>
+{{/each }}

@@ -1,0 +1,35 @@
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" value="{{ this.first_name }}" id="floatingInput" placeholder="First Name" name="first_name">
+            <label for="floatingInput">First Name</label>
+        </div>
+    </div>
+    <div class="col-6">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Last Name" value="{{ this.last_name }}" name="last_name">
+            <label for="floatingInput">Last Name</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="{{this.email}}" name="email">
+            <label for="floatingInput">Email address</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="+212........" value="{{ this.phone }}" name="phone">
+            <label for="floatingInput">Phone</label>
+        </div>
+    </div>
+      <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="+212........" name="comments" value="{{ this.comments }}" style="height: 200px;">
+            <label for="floatingInput">Comments</label>
+        </div>
+    </div>
+    <div class="col-12 d-gird">
+        <button class="btn btn-primary" type="submit">Save</button>
+    </div>
